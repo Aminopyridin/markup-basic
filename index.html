@@ -432,23 +432,6 @@ p {
 2. *Срочные* (inline). Занимают место в тексте, игнорируют заданные размеры. Пример: `span`, `i`, `b`
 3. *Блочно-строчные* (inline-block). Занимают место в тексте, можно задавать высоту и ширину. Пример: `img`
 
-***
-
-### Размеры элемента
-
-- width — ширина
-- height — высота
-
-Не работают для строчных элементов.
-
-***
-
-### Отступы у элемента
-
-- margin — внешний отступ, от других элементов
-- padding — внутренний отступ, поле
-
-[Посмотреть](https://codepen.io/Aminopyridin/pen/VgKRMO?editors=1100)
 
 ***
 
@@ -460,6 +443,33 @@ p {
 .inline-block { display: inline-block; }
 .hide { display: none; }
 ```
+
+***
+
+### Размеры элемента
+
+- width — ширина
+- height — высота
+
+Не работают для строчных элементов.
+
+***
+
+### Практика
+
+1. Открой [интерактивный пример](https://codepen.io/Aminopyridin/pen/ErbLBZ?editors=1100)
+2. Поменяй свойство display так, чтобы блоки встали в один ряд
+3. Поменяй ширину блокам так, чтобы у обоих была ширина 30%;
+4. Добавь к ним в ряд еще один блок, любого цвета, ширины 30% и высоты 50px
+
+***
+
+### Отступы у элемента
+
+- margin — внешний отступ, от других элементов
+- padding — внутренний отступ, поле
+
+[Посмотреть](https://codepen.io/Aminopyridin/pen/VgKRMO?editors=1100)
 
 ***
 
@@ -480,6 +490,84 @@ p {
 <img src="assets/box-model.png" alt="Box model">
 
 
+***
+
+### Box-sizing
+
+```css
+box-sizing: border-box; // размер включает в себя padding и border
+box-sizing: content-box; // размер задает значение только для контента
+```
+
+[Попробовать](https://codepen.io/Aminopyridin/pen/VgKRMO?editors=1100)
+
+
+</script></section>
+
+<section data-markdown><script type="text/template">
+
+## Дополнительные знания про текст
+
+***
+
+### Горизонтальное выравнивание текста
+
+```css
+text-align: left; // по левому краю
+text-align: right; // по правому краю
+text-align: center; // по центру
+```
+
+[Пример](https://codepen.io/Aminopyridin/pen/ZwaRxK?editors=1100)
+
+***
+
+### Вертикальное выравнивание текста
+
+```css
+vertical-align: top;
+vertical-align: middle;
+vertical-align: bottom;
+```
+
+[Пример](https://codepen.io/Aminopyridin/pen/ZwaRqJ?editors=1100)
+
+
+***
+
+### Стили для списков
+
+```css
+list-style: none; // убрать буллет
+list-style: square; // квадрат
+list-style: upper-roman; // Римские заглавные
+```
+
+[Пример](https://codepen.io/Aminopyridin/pen/VgrBvJ?editors=1100)
+[Типы буллетов](https://webref.ru/css/list-style-type)
+
+
+</script></section>
+
+<section data-markdown><script type="text/template">
+
+### Практика
+
+1. [Код писать тут](https://codepen.io/Aminopyridin/pen/MLOXKy?editors=1100)
+2. Сейчас там только два параграфа текста. Нужно, меняя только стили, сделать, чтобы они выглядели так:
+
+![Решение](assets/texts-task.png)
+
+*Задача со звездочкой:*
+Добавить еще два параграфа текста. Можно скопировать эти же параграфы. Сделать так, чтобы они располагались по два
+параграфа в каждой колонке (первые два в левой, вторые два в правой).
+
+
+***
+
+[Мое решение](https://codepen.io/Aminopyridin/pen/bzYKEX?editors=1100) предыдущей задачи.
+
+
 </script></section>
 
 <section data-markdown><script type="text/template">
@@ -488,7 +576,17 @@ p {
 ### Ресурсы
 
 - [Справочник HTML](https://webref.ru/html)
+- [Справочник CSS](https://webref.ru/css)
 - [Туториал по основам верстки](https://melnik909.gitbooks.io/tutorial-for-beginner-front-end-developer/content/)
+- [Интерактивные курсы от HTML Academy](https://htmlacademy.ru/courses)
+
+***
+
+### Домашнее задание
+
+1. Скачай и распакуй [архив](assets/task.zip) с заданием
+2. Поставь [VSCode](https://code.visualstudio.com/)
+3. В файле readme.md написаны условия задачи, открывай его любым текстовым редактором
 
 </script></section>
 
